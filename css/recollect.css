@@ -3,8 +3,14 @@ body {
 	color: rgb(255, 255, 255);
 	font-family: 'Roboto';
 	height: 100%;
+
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select:none;
+	user-select:none;
 }
 
+/* Landing page. */
 #container {
 	width: 100%;
 	height: 100%;
@@ -40,4 +46,65 @@ body {
   0%   { opacity: 1; }
   50%  { opacity: 0.25; }
   100% { opacity: 1; }
+}
+
+/* Game page. */
+.top-region {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+#remaining {
+	border: 2px solid rgb(95, 191, 119);
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	display: inline-block
+}
+
+#information {
+	width: 100%;
+	text-align: center;
+	table-layout: fixed;
+}
+
+#information .problem {
+	font-size: 72px;
+	font-weight: 300;
+}
+
+.bottom-region {
+	background-color: rgb(25, 45, 48);
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+
+.numpad {
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+}
+
+.numpad td {
+	padding: 0;
+	vertical-align: middle;
+}
+
+.numpad .digit {
+	font-size: 32px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.digit.wrong {
+	background-color: rgb(222, 97, 82);
+}
+
+.digit.correct {
+	background-color: rgb(95, 191, 119);
 }

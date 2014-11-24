@@ -2,13 +2,17 @@
 <html>
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+
     <title>RECOLLECT</title>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/hammer.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/recollect.css" type="text/css" media="screen">
 </head>
 <body>
     <div id="container">
-        <div class="screen">
+        <!-- <div class="screen">
             <table id="logo">
                 <tr>
                     <td>R</td><td>E</td><td>C</td>
@@ -20,13 +24,34 @@
                     <td>E</td><td>C</td><td>T</td>
                 </tr>
             </table>
-        </div>
-        <div class="screen">
-            
+        </div> -->
+        <div id="game" class="screen">
+            <div class="top-region">
+                <table id="information">
+                    <tr>
+                        <td><div id="remaining">5</div></td>
+                        <td></td>
+                        <td class="problem">2</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="problem">+</td>
+                        <td class="problem">2</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bottom-region">
+                <table class="numpad">
+                    <tr><td class="digit">1</td><td class="digit">2</td><td class="digit">3</td></tr>
+                    <tr><td class="digit">4</td><td class="digit">5</td><td class="digit">6</td></tr>
+                    <tr><td class="digit">7</td><td class="digit">8</td><td class="digit">9</td></tr>
+                    <tr><td></td><td class="digit">0</td><td></td></tr>
+                </table>
+            </div>
         </div>
     </div>
-    <script src="js/lib/jquery-2.1.1.min.js"></script>
-    <script src="js/lib/hammer.min.js"></script>
+
     <script src="js/recollect.js"></script>
 </body>
 </html>
+
